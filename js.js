@@ -1,3 +1,30 @@
+const openModal = document.querySelector('.open-btn');
+const closeModal =  document.querySelector('.close-btn');
+
+
+openModal.addEventListener('click', ()=> {
+
+  document.querySelector('.text-container').style.height = '100%'
+  document.querySelector('.open-btn').style.display = 'none'
+  closeModal.style.display = 'block'
+
+})
+
+closeModal.addEventListener('click', ()=> {
+
+  console.log('hello');
+
+  document.querySelector('.text-container').style.height = '200px';
+  document.querySelector('.open-btn').style.display = 'block';
+  closeModal.style.display = 'none';
+
+})
+
+
+
+
+
+
 var swiper = new Swiper(".swiper", {
     spaceBetween: 30,
     centeredSlides: true,
