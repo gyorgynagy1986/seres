@@ -54,6 +54,7 @@ const sr = ScrollReveal({
   })
 
   sr.reveal(`.container`, {distance: '150px', origin: 'center', distance: '0px',} )
+  sr.reveal(`.video-container`, {duration: 2000,distance: '80px', origin: 'top',} )
   sr.reveal(`.gallery`, {distance: '150px', origin: 'center', distance: '0px', duration: 3000,} )
-  sr.reveal(`.social-container`, {distance: '75px', origin: 'top',  duration: 4500,} )
+  sr.reveal(`.social-container`, {distance: '75px', origin: 'top',} )
   sr.reveal(`.contact-container`, {distance: '150px', origin: 'top',  duration: 2500,} )
