@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=Spectral+SC&display=swap');
+:root {
+    --f1: 'League Spartan', sans-serif;
+    --f2: 'Source Serif 4', serif;
+    --f3: 'Spectral SC', serif; 
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(/assets/cover.png);
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    min-height: 700px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1 {
+    font-family: var(--f2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 82.1%;
+    /* identical to box height, or 79px */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-variant: small-caps;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 2rem;
+    opacity: .8;
+}
+
+.h2 {
+    margin-top: 1rem;
+    font-family: var(--f1);
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 141.6%;
+    /* or 34px */
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.header-p {
+    margin-top: 1rem;
+    font-family: var(--f3);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 82.1%;
+    /* identical to box height, or 33px */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    letter-spacing: 0.05em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: #D6D6D6;
+}
+
+.logo {
+    margin-top: 2rem;
+    width: 101px;
+    height: 132px;
+}
+
+.social {
+    width: 112px;
+    height: 45px;
+    opacity: .7;
+}
+
+.social-container {
+    margin-top: 7rem;
+    display: flex;
+    gap: 2rem;
+    opacity: .8;
+}
+
+.content {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    max-height: 200rem;
+    background: linear-gradient(180deg, #141416 0%, #161617 21.88%, #311B0F 65.62%, #4E2107 100%);
+    display: inline-block;
+}
+
+
+
+.video-container {
+    margin-top: 15rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.gallery {
+    margin-top: 50rem;
+    width: 100%;
+    height: 100%;
+}  
+
+.swiper {
+    width: 100%;
+    max-width: 600px;
+    max-height: 550px;
+  }
+
+.swiper-slide  {
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    max-height: 458px;
+    height: auto;
+    object-fit:contain;
+}
+
+:root {
+    --swiper-theme-color: #000000 !important;
+}
+
+.contact-container {
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+    padding-top: 5rem;
+    margin-top: 177px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: .8;
+}
+
+.mail-icon .phone-icon{
+    margin-bottom: .5rem;
+}
+
+.mail-address {
+    font-family: var(--f1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 141.6%;
+    /* identical to box height, or 34px */
+
+    text-align: center;
+    font-variant: small-caps;
+
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.phone-number {
+    font-family: var(--f1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 141.6%;
+    /* identical to box height, or 34px */
+    text-align: center;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.social-container-contact {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+footer {
+    height: 1rem;
+    background-color: #000000;
+}
