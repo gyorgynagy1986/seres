@@ -168,6 +168,14 @@ a {
     opacity: .8;
 }
 
+@media screen and (max-width: 600px) {
+    .social-container {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+       
+    }
+  }
+
 .social-container img:not(last-child) {
     margin-right: 2rem;
 }
