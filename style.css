@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    background-color: #000000;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -450,3 +454,11 @@ footer {
 }
 
 
+header {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  header.fade-in {
+    opacity: 0;
+  }
