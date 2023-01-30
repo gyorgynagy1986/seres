@@ -2,6 +2,16 @@ const openModal = document.querySelector('.open-btn');
 const closeModal =  document.querySelector('.close-btn');
 
 
+const loader = document.getElementById('preloader');
+
+window.addEventListener('load', function(load) {
+  window.removeEventListener('load', load, false);               
+  setTimeout(function(){loader.style.display = 'none'},1000);
+
+},false);
+
+
+
 openModal.addEventListener('click', ()=> {
 
   document.querySelector('.text-container').style.height = '100%'
@@ -48,7 +58,7 @@ var swiper = new Swiper(".swiper", {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '10px',
-    duration: 4000,
+    duration: 9000,
     delay: 150,
     //reset: true
   })
@@ -56,5 +66,5 @@ const sr = ScrollReveal({
   sr.reveal(`.container`, {distance: '150px', origin: 'center', distance: '0px',} )
   sr.reveal(`.video-container`, {duration: 2000,distance: '80px', origin: 'top',} )
   sr.reveal(`.gallery`, {distance: '150px', origin: 'center', distance: '0px', duration: 3000,} )
-  sr.reveal(`.social-container`, {distance: '75px', origin: 'top',} )
+  sr.reveal(`.social-container`, {distance: '75px', origin: 'top',duration: 4000,} )
   sr.reveal(`.contact-container`, {distance: '150px', origin: 'top',  duration: 2500,} )
