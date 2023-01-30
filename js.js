@@ -4,7 +4,7 @@ const closeModal =  document.querySelector('.close-btn');
 const sr = ScrollReveal({
   origin: 'top',
   distance: '10px',
-  duration: 9000,
+  duration: 6000,
   delay: 150,
   //reset: true
 })
