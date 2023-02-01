@@ -16,7 +16,7 @@ const loader = document.getElementById('preloader');
 
 window.addEventListener('load', function(load) {
   window.removeEventListener('load', load, false);               
-  setTimeout(function(){loader.style.display = 'none'},1000);
+  setTimeout(function(){loader.style.display = 'none'},1500);
 
   sr.reveal(`.container`, {distance: '150px', origin: 'center', distance: '0px',} )
   sr.reveal(`.video-container`, {duration: 2000,distance: '80px', origin: 'top',} )
@@ -55,7 +55,7 @@ var swiper = new Swiper(".swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
