@@ -16,7 +16,7 @@ html, body {
     background-color: #000000;
 }
 
-a {
+a, p{
     text-decoration: none;
     color: white;
     font-size: 12px;
@@ -28,7 +28,7 @@ a {
     width: 100%;
     background-size: cover;
     height: 100%;
-    min-height: 700px;
+    min-height: 100vh;
     background-position: center;
 
 }
@@ -402,9 +402,7 @@ footer {
     justify-content: center;
 }
 
-.footer-text {
-    opacity: .8;
-}
+
 
 
 .text-container {
@@ -482,3 +480,37 @@ header {
     position: fixed;
     z-index: 1000000000000;
   }
+
+
+
+  .contact-container-2 {
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: .8;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-container-2 {
+        margin-top: 5rem;
+       
+    } 
+    
+  }
+
+
+.sponsor {
+    width: 15rem;
+    height: 15rem;
+}
